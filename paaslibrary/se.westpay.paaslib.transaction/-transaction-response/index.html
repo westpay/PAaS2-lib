@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>TransactionResponse</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>paaslibrary</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="paaslibrary::se.westpay.paaslib.transaction/TransactionResponse///PointingToDeclaration//-1671024385">
+  <div class="breadcrumbs"><a href="../../../index.html">paaslibrary</a><span class="delimiter">/</span><a href="../index.html">se.westpay.paaslib.transaction</a><span class="delimiter">/</span><span class="current">TransactionResponse</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Transaction</span><wbr></wbr><span><span>Response</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">TransactionResponse</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">error<span class="token operator">: </span><a href="../-transaction-error/index.html">TransactionError</a><span class="token operator"> = </span>TransactionError.NONE<span class="token punctuation">, </span></span><span class="parameter ">errorMessage<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">saleId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">transactionId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">terminalId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">currencyId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">totalAmount<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">merchantReceipt<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">cardholderReceipt<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">denialReasons<span class="token operator">: </span><a href="../-denial-reasons/index.html">DenialReasons</a><span class="token operator"> = </span>DenialReasons.NONE<span class="token punctuation">, </span></span><span class="parameter ">paymentData<span class="token operator">: </span><a href="../-payment-data/index.html">PaymentData</a><span class="token operator"> = </span>CardPaymentData()<span class="token punctuation">, </span></span><span class="parameter ">transactionTime<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/Date.html">Date</a><span class="token operator"> = </span>Calendar.getInstance().time</span></span><span class="token punctuation">)</span> : <a href="../../se.westpay.paaslib.service/-generic-response/index.html">GenericResponse</a></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Inheritors">Inheritors</button></div>
+    <div class="tabs-section-body">
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="643424187%2FConstructors%2F-1671024385" anchor-label="TransactionResponse" id="643424187%2FConstructors%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-transaction-response.html"><span>Transaction</span><wbr></wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="643424187%2FConstructors%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-transaction-response.html"><span class="token function">TransactionResponse</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">error<span class="token operator">: </span><a href="../-transaction-error/index.html">TransactionError</a><span class="token operator"> = </span>TransactionError.NONE<span class="token punctuation">, </span></span><span class="parameter ">errorMessage<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">saleId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">transactionId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">terminalId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">currencyId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">totalAmount<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">merchantReceipt<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">cardholderReceipt<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">denialReasons<span class="token operator">: </span><a href="../-denial-reasons/index.html">DenialReasons</a><span class="token operator"> = </span>DenialReasons.NONE<span class="token punctuation">, </span></span><span class="parameter ">paymentData<span class="token operator">: </span><a href="../-payment-data/index.html">PaymentData</a><span class="token operator"> = </span>CardPaymentData()<span class="token punctuation">, </span></span><span class="parameter ">transactionTime<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/Date.html">Date</a><span class="token operator"> = </span>Calendar.getInstance().time</span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="1399031833%2FFunctions%2F-1671024385" anchor-label="getCardholderReceipt" id="1399031833%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-cardholder-receipt.html"><span>get</span><wbr></wbr><span>Cardholder</span><wbr></wbr><span><span>Receipt</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1399031833%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-cardholder-receipt.html"><span class="token function">getCardholderReceipt</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-789841799%2FFunctions%2F-1671024385" anchor-label="getCurrencyId" id="-789841799%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-currency-id.html"><span>get</span><wbr></wbr><span>Currency</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-789841799%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-currency-id.html"><span class="token function">getCurrencyId</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1812999142%2FFunctions%2F-1671024385" anchor-label="getDenialReason" id="-1812999142%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-denial-reason.html"><span>get</span><wbr></wbr><span>Denial</span><wbr></wbr><span><span>Reason</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1812999142%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-denial-reason.html"><span class="token function">getDenialReason</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-denial-reasons/index.html">DenialReasons</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2018962067%2FFunctions%2F-1671024385" anchor-label="getError" id="-2018962067%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-error.html"><span>get</span><wbr></wbr><span><span>Error</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2018962067%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-error.html"><span class="token function">getError</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-transaction-error/index.html">TransactionError</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-82806346%2FFunctions%2F-1671024385" anchor-label="getErrorMessage" id="-82806346%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../se.westpay.paaslib.service/-generic-response/get-error-message.html"><span>get</span><wbr></wbr><span>Error</span><wbr></wbr><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-82806346%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../se.westpay.paaslib.service/-generic-response/get-error-message.html"><span class="token function">getErrorMessage</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-203181275%2FFunctions%2F-1671024385" anchor-label="getMerchantReceipt" id="-203181275%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-merchant-receipt.html"><span>get</span><wbr></wbr><span>Merchant</span><wbr></wbr><span><span>Receipt</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-203181275%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-merchant-receipt.html"><span class="token function">getMerchantReceipt</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1655037399%2FFunctions%2F-1671024385" anchor-label="getPaymentDetails" id="-1655037399%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-payment-details.html"><span>get</span><wbr></wbr><span>Payment</span><wbr></wbr><span><span>Details</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1655037399%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-payment-details.html"><span class="token function">getPaymentDetails</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-payment-data/index.html">PaymentData</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="978786947%2FFunctions%2F-1671024385" anchor-label="getSaleId" id="978786947%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-sale-id.html"><span>get</span><wbr></wbr><span>Sale</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="978786947%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-sale-id.html"><span class="token function">getSaleId</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-255251666%2FFunctions%2F-1671024385" anchor-label="getTerminalId" id="-255251666%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-terminal-id.html"><span>get</span><wbr></wbr><span>Terminal</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-255251666%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-terminal-id.html"><span class="token function">getTerminalId</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="821041977%2FFunctions%2F-1671024385" anchor-label="getTotalAmount" id="821041977%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-total-amount.html"><span>get</span><wbr></wbr><span>Total</span><wbr></wbr><span><span>Amount</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="821041977%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-total-amount.html"><span class="token function">getTotalAmount</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1429510148%2FFunctions%2F-1671024385" anchor-label="getTransactionId" id="-1429510148%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-transaction-id.html"><span>get</span><wbr></wbr><span>Transaction</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1429510148%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-transaction-id.html"><span class="token function">getTransactionId</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-642697206%2FFunctions%2F-1671024385" anchor-label="getTransactionTime" id="-642697206%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-transaction-time.html"><span>get</span><wbr></wbr><span>Transaction</span><wbr></wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-642697206%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-transaction-time.html"><span class="token function">getTransactionTime</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/Date.html">Date</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-234947438%2FFunctions%2F-1671024385" anchor-label="isSuccess" id="-234947438%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../se.westpay.paaslib.service/-generic-response/is-success.html"><span>is</span><wbr></wbr><span><span>Success</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-234947438%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../se.westpay.paaslib.service/-generic-response/is-success.html"><span class="token function">isSuccess</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1719972097%2FFunctions%2F-1671024385" anchor-label="setCardholderReceipt" id="-1719972097%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-cardholder-receipt.html"><span>set</span><wbr></wbr><span>Cardholder</span><wbr></wbr><span><span>Receipt</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1719972097%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-cardholder-receipt.html"><span class="token function">setCardholderReceipt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cardholderReceipt<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1226048843%2FFunctions%2F-1671024385" anchor-label="setCurrencyId" id="1226048843%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-currency-id.html"><span>set</span><wbr></wbr><span>Currency</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1226048843%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-currency-id.html"><span class="token function">setCurrencyId</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-698320845%2FFunctions%2F-1671024385" anchor-label="setDenialReason" id="-698320845%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-denial-reason.html"><span>set</span><wbr></wbr><span>Denial</span><wbr></wbr><span><span>Reason</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-698320845%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-denial-reason.html"><span class="token function">setDenialReason</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../-denial-reasons/index.html">DenialReasons</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-919764526%2FFunctions%2F-1671024385" anchor-label="setError" id="-919764526%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-error.html"><span>set</span><wbr></wbr><span><span>Error</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-919764526%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-error.html"><span class="token function">setError</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../-transaction-error/index.html">TransactionError</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="482730266%2FFunctions%2F-1671024385" anchor-label="setErrorMessage" id="482730266%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../se.westpay.paaslib.service/-generic-response/set-error-message.html"><span>set</span><wbr></wbr><span>Error</span><wbr></wbr><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="482730266%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../se.westpay.paaslib.service/-generic-response/set-error-message.html"><span class="token function">setErrorMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">errorMessage<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="330122355%2FFunctions%2F-1671024385" anchor-label="setMerchantReceipt" id="330122355%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-merchant-receipt.html"><span>set</span><wbr></wbr><span>Merchant</span><wbr></wbr><span><span>Receipt</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="330122355%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-merchant-receipt.html"><span class="token function">setMerchantReceipt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">merchantReceipt<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1677332154%2FFunctions%2F-1671024385" anchor-label="setPaymentDetails" id="1677332154%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-payment-details.html"><span>set</span><wbr></wbr><span>Payment</span><wbr></wbr><span><span>Details</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1677332154%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-payment-details.html"><span class="token function">setPaymentDetails</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">paymentDetails<span class="token operator">: </span><a href="../-payment-data/index.html">PaymentData</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1093194131%2FFunctions%2F-1671024385" anchor-label="setSaleId" id="-1093194131%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-sale-id.html"><span>set</span><wbr></wbr><span>Sale</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1093194131%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-sale-id.html"><span class="token function">setSaleId</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1046387725%2FFunctions%2F-1671024385" anchor-label="setSuccess" id="-1046387725%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../se.westpay.paaslib.service/-generic-response/set-success.html"><span>set</span><wbr></wbr><span><span>Success</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1046387725%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../se.westpay.paaslib.service/-generic-response/set-success.html"><span class="token function">setSuccess</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">success<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-164600414%2FFunctions%2F-1671024385" anchor-label="setTerminalId" id="-164600414%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-terminal-id.html"><span>set</span><wbr></wbr><span>Terminal</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-164600414%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-terminal-id.html"><span class="token function">setTerminalId</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-133301292%2FFunctions%2F-1671024385" anchor-label="setTotalAmount" id="-133301292%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-total-amount.html"><span>set</span><wbr></wbr><span>Total</span><wbr></wbr><span><span>Amount</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-133301292%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-total-amount.html"><span class="token function">setTotalAmount</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-638815748%2FFunctions%2F-1671024385" anchor-label="setTransactionId" id="-638815748%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-transaction-id.html"><span>set</span><wbr></wbr><span>Transaction</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-638815748%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-transaction-id.html"><span class="token function">setTransactionId</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="400058152%2FFunctions%2F-1671024385" anchor-label="setTransactionTime" id="400058152%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-transaction-time.html"><span>set</span><wbr></wbr><span>Transaction</span><wbr></wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="400058152%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-transaction-time.html"><span class="token function">setTransactionTime</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">transactionTime<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/Date.html">Date</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Inheritors</h2>
+      <div class="table" data-togglable="Inheritors"><a data-name="-143634015%2FInheritors%2F-1671024385" anchor-label="PurchaseResponse" id="-143634015%2FInheritors%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-purchase-response/index.html">PurchaseResponse</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-143634015%2FInheritors%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div></div>
+          </div>
+        </div>
+<a data-name="1216683658%2FInheritors%2F-1671024385" anchor-label="RefundResponse" id="1216683658%2FInheritors%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-refund-response/index.html">RefundResponse</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1216683658%2FInheritors%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

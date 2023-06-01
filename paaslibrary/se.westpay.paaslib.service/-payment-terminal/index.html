@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>PaymentTerminal</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>paaslibrary</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="paaslibrary::se.westpay.paaslib.service/PaymentTerminal///PointingToDeclaration//-1671024385">
+  <div class="breadcrumbs"><a href="../../../index.html">paaslibrary</a><span class="delimiter">/</span><a href="../index.html">se.westpay.paaslib.service</a><span class="delimiter">/</span><span class="current">PaymentTerminal</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Payment</span><wbr></wbr><span><span>Terminal</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">PaymentTerminal</a></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Inheritors">Inheritors</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="950412011%2FFunctions%2F-1671024385" anchor-label="abortTransaction" id="950412011%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="abort-transaction.html"><span>abort</span><wbr></wbr><span><span>Transaction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="950412011%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="abort-transaction.html"><span class="token function">abortTransaction</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Aborts a transaction in progress. An abort-transaction request is sent to the payment application. If there is no active transaction the request is ignored. If there is an active transaction the payment application will attempt to abort it.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="458229533%2FFunctions%2F-1671024385" anchor-label="checkForUpdates" id="458229533%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="check-for-updates.html"><span>check</span><wbr></wbr><span>For</span><wbr></wbr><span><span>Updates</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="458229533%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="check-for-updates.html"><span class="token function">checkForUpdates</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/app/Activity.html">Activity</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Checks for updates to the payment terminal. Calling this method will start the Application Updater program.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-583576930%2FFunctions%2F-1671024385" anchor-label="createCustomCardResponseFromIntent" id="-583576930%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="create-custom-card-response-from-intent.html"><span>create</span><wbr></wbr><span>Custom</span><wbr></wbr><span>Card</span><wbr></wbr><span>Response</span><wbr></wbr><span>From</span><wbr></wbr><span><span>Intent</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-583576930%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-custom-card-response-from-intent.html"><span class="token function">createCustomCardResponseFromIntent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">intent<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Intent.html">Intent</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../se.westpay.paaslib.readcard/-custom-card-response/index.html">CustomCardResponse</a></div><div class="brief "><p class="paragraph">Creates the CustomCardResponse from the Intent.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1573919216%2FFunctions%2F-1671024385" anchor-label="createIntentForCustomCard" id="1573919216%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="create-intent-for-custom-card.html"><span>create</span><wbr></wbr><span>Intent</span><wbr></wbr><span>For</span><wbr></wbr><span>Custom</span><wbr></wbr><span><span>Card</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1573919216%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-intent-for-custom-card.html"><span class="token function">createIntentForCustomCard</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">customCardRequest<span class="token operator">: </span><a href="../../se.westpay.paaslib.readcard/-custom-card-request/index.html">CustomCardRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Intent.html">Intent</a></div><div class="brief "><p class="paragraph">Creates the Intent that allow the user to perform a read custom card.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1197743977%2FFunctions%2F-1671024385" anchor-label="createIntentForMaintenance" id="-1197743977%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="create-intent-for-maintenance.html"><span>create</span><wbr></wbr><span>Intent</span><wbr></wbr><span>For</span><wbr></wbr><span><span>Maintenance</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1197743977%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-intent-for-maintenance.html"><span class="token function">createIntentForMaintenance</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Intent.html">Intent</a></div><div class="brief "><p class="paragraph">Creates the Intent that allows the user to open the maintenance menu in the payment application.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2131817471%2FFunctions%2F-1671024385" anchor-label="createIntentForOpenMenu" id="-2131817471%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="create-intent-for-open-menu.html"><span>create</span><wbr></wbr><span>Intent</span><wbr></wbr><span>For</span><wbr></wbr><span>Open</span><wbr></wbr><span><span>Menu</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2131817471%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-intent-for-open-menu.html"><span class="token function">createIntentForOpenMenu</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">disabledMenuFeatures<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-menu-features/index.html">MenuFeatures</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Intent.html">Intent</a></div><div class="brief "><p class="paragraph">Open the system menu in the payment terminal. The payment terminal will take over the screen and show its System functions menu. When the user exits the menu, response callback is called and the POS application should start the appropriate activity to take over.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1389130280%2FFunctions%2F-1671024385" anchor-label="createIntentForTransaction" id="-1389130280%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="create-intent-for-transaction.html"><span>create</span><wbr></wbr><span>Intent</span><wbr></wbr><span>For</span><wbr></wbr><span><span>Transaction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1389130280%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-intent-for-transaction.html"><span class="token function">createIntentForTransaction</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">transaction<span class="token operator">: </span><a href="../../se.westpay.paaslib.transaction/-transaction-request/index.html">TransactionRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Intent.html">Intent</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Creates an Intent from a TransactionRequest.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1244444453%2FFunctions%2F-1671024385" anchor-label="createTransactionResponseFromIntent" id="-1244444453%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="create-transaction-response-from-intent.html"><span>create</span><wbr></wbr><span>Transaction</span><wbr></wbr><span>Response</span><wbr></wbr><span>From</span><wbr></wbr><span><span>Intent</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1244444453%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-transaction-response-from-intent.html"><span class="token function">createTransactionResponseFromIntent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">intent<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Intent.html">Intent</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../se.westpay.paaslib.transaction/-transaction-response/index.html">TransactionResponse</a></div><div class="brief "><p class="paragraph">Creates an TransactionResponse from a Intent.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1355472837%2FFunctions%2F-1671024385" anchor-label="disableNavigationBar" id="1355472837%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="disable-navigation-bar.html"><span>disable</span><wbr></wbr><span>Navigation</span><wbr></wbr><span><span>Bar</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1355472837%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="disable-navigation-bar.html"><span class="token function">disableNavigationBar</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Makes the navigation bar disappear.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="823338372%2FFunctions%2F-1671024385" anchor-label="enableNavigationBar" id="823338372%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="enable-navigation-bar.html"><span>enable</span><wbr></wbr><span>Navigation</span><wbr></wbr><span><span>Bar</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="823338372%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="enable-navigation-bar.html"><span class="token function">enableNavigationBar</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">navigationBarButtons<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../se.westpay.paaslib.androidplatform/-navigation-bar-buttons/index.html">NavigationBarButtons</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Show the navigation bar with back and/or home buttons. This method will add the provided buttons to the navigation bar, that means that if the HOME button already been enabled by another activity and the provided button is BACK for this activity, both buttons will be shown. Hiding the navigation bar can be done by using the Android API method View.setSystemUiVisibility with the flags View.SYSTEM_UI_FLAG_HIDE_NAVIGATION and View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY int the application.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="471976581%2FFunctions%2F-1671024385" anchor-label="enableSuspend" id="471976581%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="enable-suspend.html"><span>enable</span><wbr></wbr><span><span>Suspend</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="471976581%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="enable-suspend.html"><span class="token function">enableSuspend</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">enable<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Enable/disable the suspend time.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1000448608%2FFunctions%2F-1671024385" anchor-label="getLastTransactionResult" id="-1000448608%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-last-transaction-result.html"><span>get</span><wbr></wbr><span>Last</span><wbr></wbr><span>Transaction</span><wbr></wbr><span><span>Result</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1000448608%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-last-transaction-result.html"><span class="token function">getLastTransactionResult</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">response<span class="token operator">: </span><a href="../../se.westpay.paaslib.transaction/-transaction-response-handler/index.html">TransactionResponseHandler</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Gets the result of the last completed transaction. The response will contain the same data as the original response to .doTransaction.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1266701668%2FFunctions%2F-1671024385" anchor-label="getPrinterStatus" id="1266701668%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-printer-status.html"><span>get</span><wbr></wbr><span>Printer</span><wbr></wbr><span><span>Status</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1266701668%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-printer-status.html"><span class="token function">getPrinterStatus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../se.westpay.paaslib.printer/-printer-status/index.html">PrinterStatus</a></div><div class="brief "><p class="paragraph">Get printer status.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1164695328%2FFunctions%2F-1671024385" anchor-label="getProduct" id="1164695328%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-product.html"><span>get</span><wbr></wbr><span><span>Product</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1164695328%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-product.html"><span class="token function">getProduct</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Retrieves the device product text.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1690683854%2FFunctions%2F-1671024385" anchor-label="getSerialNumber" id="1690683854%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-serial-number.html"><span>get</span><wbr></wbr><span>Serial</span><wbr></wbr><span><span>Number</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1690683854%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-serial-number.html"><span class="token function">getSerialNumber</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Retrieves the device serial number.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-352909828%2FFunctions%2F-1671024385" anchor-label="getSleepTime" id="-352909828%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-sleep-time.html"><span>get</span><wbr></wbr><span>Sleep</span><wbr></wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-352909828%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-sleep-time.html"><span class="token function">getSleepTime</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../se.westpay.paaslib.utility/-sleep-time-values/index.html">SleepTimeValues</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Gets the sleep time value.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1775765286%2FFunctions%2F-1671024385" anchor-label="getSuspendTime" id="1775765286%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-suspend-time.html"><span>get</span><wbr></wbr><span>Suspend</span><wbr></wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1775765286%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-suspend-time.html"><span class="token function">getSuspendTime</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../se.westpay.paaslib.utility/-suspend-time-values/index.html">SuspendTimeValues</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Gets the suspend time value.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-712830604%2FFunctions%2F-1671024385" anchor-label="getTerminalStatus" id="-712830604%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-terminal-status.html"><span>get</span><wbr></wbr><span>Terminal</span><wbr></wbr><span><span>Status</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-712830604%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-terminal-status.html"><span class="token function">getTerminalStatus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">response<span class="token operator">: </span><a href="../../se.westpay.paaslib.initialisation/-terminal-status-response-handler/index.html">TerminalStatusResponseHandler</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Retrieve the terminal status.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1847972533%2FFunctions%2F-1671024385" anchor-label="initialise" id="1847972533%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="initialise.html"><span><span>initialise</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1847972533%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="initialise.html"><span class="token function">initialise</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">settings<span class="token operator">: </span><a href="../../se.westpay.paaslib.initialisation/-terminal-settings/index.html">TerminalSettings</a><span class="token punctuation">, </span></span><span class="parameter ">response<span class="token operator">: </span><a href="../../se.westpay.paaslib.initialisation/-initialisation-response-handler/index.html">InitialisationResponseHandler</a><span class="token punctuation">, </span></span><span class="parameter ">notification<span class="token operator">: </span><a href="../../se.westpay.paaslib.notification/-notification-handler/index.html">NotificationHandler</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Initialises the payment terminal. Before the payment terminal can be used to process transactions, it has to be initialised. The initialisation process includes contacting the payment processor and downloading the current terminal settings.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1508635754%2FFunctions%2F-1671024385" anchor-label="isSuspendEnabled" id="1508635754%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="is-suspend-enabled.html"><span>is</span><wbr></wbr><span>Suspend</span><wbr></wbr><span><span>Enabled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1508635754%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-suspend-enabled.html"><span class="token function">isSuspendEnabled</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Check if suspend time is enabled.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="873796202%2FFunctions%2F-1671024385" anchor-label="setCardVerificationHandler" id="873796202%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-card-verification-handler.html"><span>set</span><wbr></wbr><span>Card</span><wbr></wbr><span>Verification</span><wbr></wbr><span><span>Handler</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="873796202%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-card-verification-handler.html"><span class="token function">setCardVerificationHandler</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">response<span class="token operator">: </span><a href="../../se.westpay.paaslib.transaction/-card-verification-handler/index.html">CardVerificationHandler</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Set the card verification handler.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1833768184%2FFunctions%2F-1671024385" anchor-label="setScreenBrightness" id="1833768184%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-screen-brightness.html"><span>set</span><wbr></wbr><span>Screen</span><wbr></wbr><span><span>Brightness</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1833768184%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-screen-brightness.html"><span class="token function">setScreenBrightness</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">brightnessPercent<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Set screen brightness.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1742641640%2FFunctions%2F-1671024385" anchor-label="setSleepTime" id="1742641640%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-sleep-time.html"><span>set</span><wbr></wbr><span>Sleep</span><wbr></wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1742641640%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-sleep-time.html"><span class="token function">setSleepTime</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">time<span class="token operator">: </span><a href="../../se.westpay.paaslib.utility/-sleep-time-values/index.html">SleepTimeValues</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Set the sleep time value.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2022344094%2FFunctions%2F-1671024385" anchor-label="setSuspendTime" id="2022344094%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-suspend-time.html"><span>set</span><wbr></wbr><span>Suspend</span><wbr></wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2022344094%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-suspend-time.html"><span class="token function">setSuspendTime</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">time<span class="token operator">: </span><a href="../../se.westpay.paaslib.utility/-suspend-time-values/index.html">SuspendTimeValues</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Set the suspend time value.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1210202870%2FFunctions%2F-1671024385" anchor-label="setTransactionAmounts" id="1210202870%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-transaction-amounts.html"><span>set</span><wbr></wbr><span>Transaction</span><wbr></wbr><span><span>Amounts</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1210202870%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-transaction-amounts.html"><span class="token function">setTransactionAmounts</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">transactionAmounts<span class="token operator">: </span><a href="../../se.westpay.paaslib.transaction/-transaction-amounts/index.html">TransactionAmounts</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If a zero amount is provided in the transaction request, this call can be used to update the transaction with an amount.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1801580840%2FFunctions%2F-1671024385" anchor-label="shutdown" id="1801580840%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="shutdown.html"><span><span>shutdown</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1801580840%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="shutdown.html"><span class="token function">shutdown</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">restart<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Shuts down the payment terminal.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="810804280%2FFunctions%2F-1671024385" anchor-label="startPrintJob" id="810804280%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="start-print-job.html"><span>start</span><wbr></wbr><span>Print</span><wbr></wbr><span><span>Job</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="810804280%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="start-print-job.html"><span class="token function">startPrintJob</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../se.westpay.paaslib.printer/-print-job/index.html">PrintJob</a></div><div class="brief "><p class="paragraph">Starts a new printer job.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1099014116%2FFunctions%2F-1671024385" anchor-label="validateMerchantPassword" id="1099014116%2FFunctions%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="validate-merchant-password.html"><span>validate</span><wbr></wbr><span>Merchant</span><wbr></wbr><span><span>Password</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1099014116%2FFunctions%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:paaslibrary:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="validate-merchant-password.html"><span class="token function">validateMerchantPassword</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">password<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Validate the merchant password.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Inheritors</h2>
+      <div class="table" data-togglable="Inheritors"><a data-name="903247793%2FInheritors%2F-1671024385" anchor-label="CarbonTerminal" id="903247793%2FInheritors%2F-1671024385" data-filterable-set=":app:paaslibrary:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":app:paaslibrary:dokkaHtml/release" data-filterable-set=":app:paaslibrary:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-carbon-terminal/index.html">CarbonTerminal</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="903247793%2FInheritors%2F-1671024385"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
